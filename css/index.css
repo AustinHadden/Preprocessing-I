@@ -134,3 +134,122 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+/* Variables */
+/* Mixins */
+/* My styling starts hear */
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 2%;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+header nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+header nav a {
+  font-size: 3rem;
+  color: dodgerblue;
+  text-decoration: none;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background: gainsboro;
+}
+.top-content img {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 1%;
+}
+.top-content h1 {
+  font-size: 4rem;
+  margin: 2% 0;
+}
+.top-content p {
+  font-size: 2.5rem;
+  margin: 2% 0;
+}
+.top-content button {
+  width: 12%;
+  font-size: 2rem;
+  background: #FFA07A;
+  border-radius: 1rem;
+  padding: 0.5% 0;
+}
+.middle-content {
+  display: flex;
+}
+.middle-content div {
+  width: 40%;
+  margin: 2% 5%;
+}
+.middle-content div h1 {
+  font-size: 4rem;
+  margin: 2% 0;
+}
+.middle-content div ul li {
+  padding: 1%;
+  border: 1px solid grey;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content h1 {
+  font-size: 4rem;
+  margin: 2% 0;
+}
+.bottom-content table,
+.bottom-content th,
+.bottom-content td {
+  border: 1px solid grey;
+  font-size: 2.5rem;
+  padding: 2%;
+  text-align: center;
+}
+.bottom-content table {
+  width: 60%;
+  margin: 2% 0;
+}
+.bottom-content table th {
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  padding: 2% 0;
+  background: gainsboro;
+}

@@ -22,7 +22,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: baseline;	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -56,4 +56,118 @@ table {
 html, body {
     height: 100%;
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
 
+/* Variables */
+@button-color: #FFA07A;
+@title-font: 'Oswald', sans-serif;
+@body-font: 'Montserrat', sans-serif;
+/* Mixins */
+.center(){
+	display: flex;
+	justify-content: center;
+}
+.heading(){
+	font-size: 4rem;
+	margin: 2% 0;
+}
+/* My styling starts hear */
+html{
+	font-size: 62.5%;
+}
+body{
+	margin:2%;
+	font-size: 2rem;
+	font-family: @body-font;
+}
+h1, h2, h3, h4, h5{
+	font-family: @title-font;
+}
+
+header{
+	.center();
+	margin:2%;
+	nav{
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+		padding: 1%;
+		a {		
+			font-size: 3rem;
+			color: dodgerblue;
+			text-decoration: none;
+			}
+	}
+	
+}
+
+.top-content{	
+	display: flex;
+	flex-direction: column;
+	padding:2%;	
+	background: gainsboro;
+	img{
+		width:30%;
+		height:30%;
+		margin-bottom: 1%;
+	}
+	h1{
+		.heading();
+	}
+	p{
+		font-size: 2.5rem;
+		margin: 2% 0;
+	}
+	button{
+		width:12%;
+		font-size: 2rem;
+		background: @button-color;
+		border-radius: 1rem;
+		padding: .5% 0;
+	}
+}
+
+.middle-content{
+	display: flex;
+	div{
+		width: 40%;
+		margin: 2% 5%;
+		h1{
+			.heading();
+		}
+		ul li{
+			padding: 1%;
+			border: 1px solid grey;
+		}		
+	}
+	
+}
+
+
+.bottom-content{
+	display: flex;
+	flex-direction: column;
+	h1{
+		.heading();
+	}
+	table, th, td{
+		border: 1px solid grey;
+		font-size:2.5rem;
+		padding: 2%;
+		text-align: center;
+	}
+	table{
+		width:60%;
+		margin: 2% 0;
+		th{
+			font-weight: bold;
+		}
+	}
+}
+footer{
+	display: flex;
+	justify-content: center;
+	margin:1%;
+	padding: 2% 0;
+	background: gainsboro;
+}
