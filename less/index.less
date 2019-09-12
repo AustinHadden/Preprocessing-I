@@ -92,10 +92,16 @@ header{
 		display: flex;
 		justify-content: space-between;
 		padding: 1%;
+		@media (max-width:500px){
+			width:100%;
+		}
 		a {		
 			font-size: 3rem;
 			color: dodgerblue;
 			text-decoration: none;
+			@media (max-width:500px){
+				font-size: 2rem;
+			}
 			}
 	}
 	
@@ -110,6 +116,10 @@ header{
 		width:30%;
 		height:30%;
 		margin-bottom: 1%;
+		@media (max-width:500px){
+			width:60%;
+			height:60%;
+		}
 	}
 	h1{
 		.heading();
@@ -124,14 +134,26 @@ header{
 		background: @button-color;
 		border-radius: 1rem;
 		padding: .5% 0;
+		@media (max-width:500px){
+			width:30%;
+		}
+		a{
+			text-decoration: none;
+		}
 	}
 }
 
 .middle-content{
 	display: flex;
+	@media (max-width:500px){
+		flex-direction: column;
+	}
 	div{
 		width: 40%;
 		margin: 2% 5%;
+		@media (max-width:500px){
+			width:90%;			
+		}
 		h1{
 			.heading();
 		}
@@ -155,10 +177,16 @@ header{
 		font-size:2.5rem;
 		padding: 2%;
 		text-align: center;
+		@media (max-width:500px){
+			padding:2% 0;
+		}
 	}
 	table{
 		width:60%;
 		margin: 2% 0;
+		@media (max-width:500px){
+			width:100%;
+		}
 		th{
 			font-weight: bold;
 		}
@@ -166,7 +194,8 @@ header{
 }
 footer{
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	margin:1%;
 	padding: 2% 0;
 	background: gainsboro;

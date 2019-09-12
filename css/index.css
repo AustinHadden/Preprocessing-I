@@ -177,10 +177,20 @@ header nav {
   justify-content: space-between;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
 header nav a {
   font-size: 3rem;
   color: dodgerblue;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 2rem;
+  }
 }
 .top-content {
   display: flex;
@@ -192,6 +202,12 @@ header nav a {
   width: 30%;
   height: 30%;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    width: 60%;
+    height: 60%;
+  }
 }
 .top-content h1 {
   font-size: 4rem;
@@ -208,12 +224,30 @@ header nav a {
   border-radius: 1rem;
   padding: 0.5% 0;
 }
+@media (max-width: 500px) {
+  .top-content button {
+    width: 30%;
+  }
+}
+.top-content button a {
+  text-decoration: none;
+}
 .middle-content {
   display: flex;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+  }
 }
 .middle-content div {
   width: 40%;
   margin: 2% 5%;
+}
+@media (max-width: 500px) {
+  .middle-content div {
+    width: 90%;
+  }
 }
 .middle-content div h1 {
   font-size: 4rem;
@@ -239,16 +273,29 @@ header nav a {
   padding: 2%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .bottom-content table,
+  .bottom-content th,
+  .bottom-content td {
+    padding: 2% 0;
+  }
+}
 .bottom-content table {
   width: 60%;
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .bottom-content table {
+    width: 100%;
+  }
 }
 .bottom-content table th {
   font-weight: bold;
 }
 footer {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 1%;
   padding: 2% 0;
   background: gainsboro;
